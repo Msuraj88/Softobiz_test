@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+body {
+  font-family: "Barlow", sans-serif;
+}
+
+.color-primary {
+  color: #f35220;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.border-left {
+  border-left: 2px solid var(--primary) !important;
+}
+
+.sidebar {
+  top: 0;
+  left: 0;
+  z-index: 100;
+  overflow-y: auto;
+  border-right: 1px solid #eff1f4;
+}
+
+.overlay {
+  background-color: rgb(0 0 0 / 45%);
+  z-index: 99;
+}
+
+.list-group-item.active {
+  background-color: #f35220;
+}
+
+.list-group-item {
+  border-radius: 8px !important;
+}
+
+.sidebar-menu {
+  padding: 0px 16px;
+}
+
+.search-container {
+  position: relative;
+  width: auto;
+}
+
+/* Style for search icon */
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #888;
+}
+
+/* Style for search input */
+.search-input {
+  padding: 10px 10px 10px 35px; /* Adjust padding as needed */
+  border-radius: 25px; /* Adjust border-radius as needed */
+  border: 1px solid #ddd; /* Adjust border color as needed */
+}
+.table-search {
+  border: 0px !important;
+}
+.nav-header {
+  border-bottom: 1px solid #eff1f4;
+}
+
+.nav-header-right {
+  display: flex;
+  gap: 8px;
+  padding-top: 6px;
+}
+
+.pt5 {
+  padding-top: 5px;
+}
+
+/* .content-body-header-right {
+    gap: 12px;
+    display: flex;
+} */
+.btn-outline {
+  border-radius: 8px;
+  border: 1px solid #e6e7ec;
+}
+
+.btn-outline:hover {
+  background-color: #f8f9fa;
+}
+
+.btn-filled {
+  background-color: #f35220;
+  color: #fff;
+}
+.btn-filled:hover {
+  background-color: #e6410f;
+  color: #fff;
+}
+
+.btn {
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.btn i {
+  margin-right: 6px;
+}
+.content-body-header {
+  padding: 16px 12px;
+}
+.Employee-list-header {
+  padding: 12px 12px;
+  border: 1px solid #eff1f4;
+  border-radius: 12px;
+}
+
+.employee-list-table {
+  margin-top: 16px;
+  border: 1px solid #eff1f4;
+  border-radius: 12px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* Custom styles for small text */
+.small-text {
+  font-size: 12px;
+}
+
+/* Custom styles for chips */
+.chip {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  margin-right: 5px;
+}
+
+.custom-tr tr {
+  background-color: #fff !important;
+  border: 1px solid #eff1f4;
+}
+
+.custom-th th {
+  border-top: 0px !important;
+  background-color: #fafbfb;
+  font-weight: 500;
+  border-bottom: 0px !important;
+}
+
+.table-footer {
+  padding: 16px 0px;
+}
+
+.page-link {
+  color: #667085 !important;
+}
+
+.Empl-counts {
+  font-size: 16px;
+  background: #fbd5c9;
+  color: #f35220;
+  padding: 4px 10px;
+  border-radius: 50px;
+}
+
+.nav-right-align {
+  position: absolute;
+  right: 0;
+}
+
+/* sidebar for small screens */
+@media screen and (max-width: 767px) {
+  .sidebar {
+    max-width: 18rem;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-out;
+  }
+
+  .sidebar.active {
+    transform: translateX(0);
+  }
+  .content-body-header-right {
+    text-align: left !important;
+    margin-top: 8px;
+  }
+  .table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .table-responsive table {
+    width: 100%;
+  }
+
+  .table-responsive table th {
+    display: none; /* Hide table headers in mobile view */
+  }
+
+  .table-responsive table td {
+    display: block;
+    padding: 10px;
+    text-align: left;
+  }
+
+  .table-responsive table td:not(:last-child) {
+    border-bottom: 1px solid #dee2e6;
+  }
+
+  /* Show labels for table data in mobile view */
+  .table-responsive table td:nth-child(1):before {
+    content: "Name:";
+  }
+  .table-responsive table td:nth-child(2):before {
+    content: "Employee ID:";
+  }
+  .table-responsive table td:nth-child(3):before {
+    content: "Designation:";
+  }
+  .table-responsive table td:nth-child(4):before {
+    content: "Status:";
+  }
+  .table-responsive table td:nth-child(5):before {
+    content: "Departments:";
+  }
+  .table-responsive table td:nth-child(6):before {
+    content: "Actions:";
+  }
+  .hide-m {
+    visibility: hidden;
+  }
+}
